@@ -3,9 +3,9 @@
 
 // 1)  SWITCH CASE ILE ASHAGIDAKI TELEBLERI ODEYEN FUNCTION YAZIN
 
-// let SET = 'SET_DATA';
-// let GET = 'GET_DATA'
-// let DELETE = 'DELETE_DATA'
+// let SET = "SET_DATA";
+// let GET = "GET_DATA";
+// let DELETE = "DELETE_DATA";
 
 // 1.1 Yuxarida gosterilmish type lara uygun case ler yazin
 //     ve yazdgniz functionda parametr olaraq type gonderin ve birinci merhelede sadece 'case' in adini consola verin
@@ -30,25 +30,30 @@
 
 // let arr = [];
 
-// function type(a){
-// switch(a){
+// function type(a) {
+//   switch (a) {
 //     case SET:
-//         console.log(SET);
-//         break;
+//       let rndm = Math.floor(Math.random() * 10);
+//       arr.push(rndm);
+
+//       break;
 //     case GET:
-//         console.log(GET);
-//         break;
+//       console.log(arr);
+//       break;
 //     case DELETE:
-//         console.log(DELETE);
-//         break;
+//       arr.shift();
+//       break;
+//   }
+//   if(a==DELETE && arr.length==0){
+//     console.log("SILINECEK DATA TAPILMADI")
+//   }
 // }
-// if(a==SET){
-//     let b = Math.floor(Math.random() * 10)
-//     arr.push(b)
-// }
-// }
+// type(SET)
+// type(SET)
 // type(DELETE)
-// console.log(arr)
+// // type(DELETE)
+// type(GET)
+// console.log(arr);
 
 // 1.3 Case -  'DELETE'  olarsa arraydan 1 item silin
 //     ARRAY BOW OLDUGU HALDA ERROR CIXMALIDIR - 'SILINECEK DATA TAPILMADI'
@@ -70,8 +75,6 @@
 
 //     }
 // }
-
-
 
 // 3) Task 2 - deki mentiqi Date() objecti uzerinde ishledin. Hazirda oldugumuz ayi tapin ve gunlerinin sayini gosterin
 
@@ -151,8 +154,6 @@
 // console.log(slice);
 // let merged = new Map([slice])
 
-
-
 //  Almali oldugunuz
 // let mL = [
 //     ['January'],
@@ -214,7 +215,6 @@
 
 // 1.3 // Verilen array
 // let mL = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-
 
 // let arr = [];
 // let arr1 = [];
@@ -348,8 +348,6 @@
 
 // console.log(arr)
 
-
-
 //  Almali oldugunuz
 // let mL = [
 //     ['January','February',['March','April']],
@@ -360,7 +358,10 @@
 ///////////////////////////////////////////////////////////////////////////////////////////
 
 // 2) ad ve soyadinizi yazin ve onlari ashagidaki struktura getirin
-// let fullName = 'Narmin Abdulova'
+// let firstName = 'Narmin'
+// let surName = 'Abdulova'
+// let arr = [];
+// let arrElement = [];
 
 // let result = [
 //     ['M' , 'N']
@@ -388,14 +389,14 @@
 //     for (var i = text.length - 1; i >= 0; i--)
 //     newText += text[i];
 //     console.log(newText);
-  
-  // let newText = text.split("").reverse().join("");
+
+// let newText = text.split("").reverse().join("");
 // console.log(newText)
 
-   
-
-
-// let arr = [3,2,21,12,4,12,4,23,3,23,5,34,35,3,4,234,2,105,24,2,342,34,140,34,23,175,342312,1,2,1,70,21,24,23,24,23,24,2,24,34]
+// let arr = [
+//   3, 2, 21, 12, 4, 12, 4, 23, 3, 23, 5, 34, 35, 3, 4, 234, 2, 105, 24, 2, 342,
+//   34, 140, 34, 23, 175, 342312, 1, 2, 1, 70, 21, 24, 23, 24, 23, 24, 2, 24, 34,
+// ];
 
 // 4) Looplardan istifade ederek yuxaridaki arrayda hem 5-e hem 7-e eyni zamanda bolunen reqemlerin cemini tapin
 
@@ -448,8 +449,6 @@
 // }, 2000);
 // }
 
-
-
 // 2) Bir div yaradin olcusu 100-100px kvadrat olsun 1 saniyeden bir 10px ashagi 10px saga transitionla hereket etsin.
 
 // let  d = document.getElementById('bigBox')
@@ -462,8 +461,6 @@
 //     d.style.top = position + "px";
 //     d.style.left = position2 + "px";
 // }, 1000)
-
-
 
 // 3) Bir div yaradin  onu sehifede centerleyin. Olculeri 200-200px
 //  kvadrat olsun 1 saniyeden bir boyuyerek 400px-400px sonra yeniden oz olculerine qayitsin
@@ -481,17 +478,12 @@
 //   }
 // }, 1000);
 
-
-
 // 4) Bir div (200px x 200px olcude kvadrat)  ve iki button (Start ve stop) yaradin onlari alt alta centerleyin
 // Start buttona basandan 1 saniye sonra ve her 2 saniyeden bir div 90 derece firlansin
 // Stop buttona basanda 'Stop' sozunun yaninda 3 2 1 saysin ve firlanma dayansin.
 
 // 5) Bir div yaradin pencerenin sol yuxari kuncunde dayansin. Ustune clickledikde Ilk olaraq en sag kunce
 // 2ci defe clickledikde ashagi kunce 3 cu de  sol ashagi kunce ve sonda ilk bashldigi yere qayitsin
-
-
-
 
 // 6) 5 ci task hell edildiyi teqdirde eyni fayllar uzerinden davam edin ve klaviaturada kursor ashagi yuxari sag sol duymelerine basdiqda div-i hereket etdirmeye calishin.
 // Hem 5 ci tapshiriqdaki hem de bu tapshiriq ishlek veziyyetde olmalidir.
@@ -502,8 +494,6 @@
 
 // 8) Chrome dinozavr oyununu gormush olarsiz Space basdiqca Dinozavr tullanib dushur.
 // oradaki kimi oyun yazmaginizi yox sadece istediyiniz bir heyvanin png sheklini ekranda cixarib 'Space' duymesini basdiqda 200px tullanib sora yerine qayitmagini yazin. :D Maragli olacaq
-
-
 
 // 9) Random reng generate eden functionu internetden tapib ekrana her clickde body-e yeni generate edilmish ve yeni reng-le renglenmish 100px - kvadrat box elave edin.
 
